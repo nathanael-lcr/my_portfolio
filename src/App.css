@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "PP Editorial old";
+  src: url(fonts/ppeditorialold-regular.otf);
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  /*overflow: hidden;Hides the scroll bars for the entire body */
+}
+
+.cursor {
+  background-color: #000;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  height: 100px;
+  background-color: blue;
+}
+
+.h {
+  width: 100%;
+  background-color: red;
+  height: 50px;
+}
+
+.hline {
+  position: absolute;
+  height: 2px;
+  width: 90%;
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 260px;
+}
+
+.landing {
+  overflow: hidden; 
+}
+
+.desc {
+  position: absolute;
+  top: 65%;
+  width: 500px;
+  font-size: 21px;
+  font-family: 'PP Editorial old';
+  font-weight: 100;
+  padding-left: 20px;
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden; /* Hides the scroll bars for the .marquee element */
+  font-family: 'PP Editorial old';
+  font-size: 230px;
+  color: #000;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 100s linear infinite;
+  overflow: hidden;
+}
+
+.Menu {
+  font-weight: 300;
+  font-family: 'PP Editorial old';
+  font-size: 35px;
+  bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100px;
+  position: fixed;
+}
+
+.Menu:hover {
+  color: #fff;
+}
+
+.projects {
+  position: relative;
+  top: 1000px;
+}
+
+.footer {
+  position: absolute;
+  right: 10px;
+  top: 1500px;
+  font-family: 'PP Editorial old';
+}
+
+svg {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+}
+
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media only screen and (max-width: 600px) {
+  .marquee {
+    font-size: 100px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 750px) {
+  .desc {
+    width: 300px;
+    font-size: 12px;
   }
 }
