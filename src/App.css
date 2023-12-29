@@ -11,11 +11,30 @@ body {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  /*overflow: hidden;Hides the scroll bars for the entire body */
+  background-color: #000;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  z-index: -100;
+  object-fit: cover;
+}
+
+#menu-fullscreen {
+  z-index: 10;
+  position: absolute;
+  height: 250%;
+  width: 100%;
 }
 
 .cursor {
-  background-color: #000;
+  background-color: #fff;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -23,44 +42,50 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
-}
-
-h1 {
-  height: 100px;
-  background-color: blue;
-}
-
-.h {
-  width: 100%;
-  background-color: red;
-  height: 50px;
+  z-index: 11;
 }
 
 .hline {
   position: absolute;
   height: 2px;
   width: 90%;
-  background-color: #000;
+  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
-  top: 260px;
+  top: 90%;
+}
+
+.hline2 {
+  position: absolute;
+  height: 2px;
+  width: 90%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 160%;
 }
 
 .landing {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .desc {
   position: absolute;
-  top: 65%;
+  top: 110%;
+  left: 2%;
   width: 500px;
   font-size: 21px;
   font-family: 'PP Editorial old';
   font-weight: 100;
   padding-left: 20px;
+  color: #fff;
+  line-height: 150%;
 }
 
 .marquee {
@@ -71,7 +96,18 @@ h1 {
   overflow: hidden; /* Hides the scroll bars for the .marquee element */
   font-family: 'PP Editorial old';
   font-size: 230px;
-  color: #000;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.name {
+  font-family: 'PP Editorial old';
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  top: 75%;
+  font-size: 34px;
+  font-weight: 100;
 }
 
 .track {
@@ -94,15 +130,32 @@ h1 {
   text-align: center;
   width: 100px;
   position: fixed;
+  color: #fff;
+  z-index: 11;
 }
 
 .Menu:hover {
-  color: #fff;
+  color: #000;
 }
 
 .projects {
+  width: 300px;
+  font-style: italic;
   position: relative;
-  top: 1000px;
+  padding-left: 20px;
+  font-family: 'PP Editorial old';
+  font-weight: 300;
+  font-size: 26px;
+  color: #fff;
+  margin-top: 70%;
+  margin-left: 2%;
+}
+
+.project1, .project2, .project3 {
+  font-size: 20px;
+  font-style: normal;
+  padding-top: 100px;
+  color: #fff;
 }
 
 .footer {
@@ -110,12 +163,8 @@ h1 {
   right: 10px;
   top: 1500px;
   font-family: 'PP Editorial old';
-}
-
-svg {
-  position: absolute;
-  right: 10px;
-  top: 65%;
+  color: #fff;
+  font-weight: 100;
 }
 
 
