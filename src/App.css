@@ -26,15 +26,7 @@ img {
   object-fit: cover;
 }
 
-#menu-fullscreen {
-  z-index: 10;
-  position: absolute;
-  height: 250%;
-  width: 100%;
-}
-
 .cursor {
-  background-color: #fff;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -89,6 +81,7 @@ img {
 }
 
 .marquee {
+  z-index: -1;
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -131,11 +124,6 @@ img {
   width: 100px;
   position: fixed;
   color: #fff;
-  z-index: 11;
-}
-
-.Menu:hover {
-  color: #000;
 }
 
 .projects {

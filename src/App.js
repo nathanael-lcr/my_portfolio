@@ -3,28 +3,21 @@ import "./App.css";
 import Preloader from "./components/preLoader";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import FullScreenMenu from "./components/FullScreenMenu";
 
 function App() {
 
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const [mousePosition, setMousePosition] = useState({
     x:0,
     y:0
   });
 
-  let menuOpen = false;
-
-  function menu() {
-    if (menuOpen == false) {
-      document.getElementById("menu-fullscreen").style.backgroundColor = "red";
-      menuOpen = true;
-    } else {
-      document.getElementById("menu-fullscreen").style.backgroundColor = "#ffffff00";
-      menuOpen = false;
-    }
-
-  }
   
   const [cursorVariant, setCursorVariant] = useState("default");
 
@@ -47,7 +40,7 @@ function App() {
     default : {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
-      backgroundColor: "white"
+      backgroundColor: isMenuOpen ? "black" : "white"
     },
     text : {
       height:150,
@@ -78,13 +71,11 @@ function App() {
   return (
     <>
       <Preloader />
-      <div id="menu-fullscreen"></div>
       <div className="hline"></div>
       <motion.div className="cursor" variants={variants} animate={cursorVariant}></motion.div>
-      <div className="header">
-        <div className="Menu" onMouseEnter={menuEnter} onMouseLeave={menuLeave} onClick={menu}>.menu</div>
-      </div>
-      <div className="name">Nathanaël <br /> Lecron</div>
+      <div className="Menu" onMouseEnter={menuEnter} onMouseLeave={menuLeave} onClick={toggleMenu}>.menu</div>
+      <FullScreenMenu isOpen={isMenuOpen} onClose={toggleMenu} />
+      <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="name">Nathanaël <br /> Lecron</div>
       <img src="https://media.vogue.fr/photos/5d31bf328133af0008628de6/1:1/w_4617,h_4617,c_limit/GettyImages-486778371.jpg"
       alt="ds" height="500" width="500" />
       <div className="landing">
