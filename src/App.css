@@ -133,23 +133,32 @@ img {
   padding-left: 20px;
   font-family: 'PP Editorial old';
   font-weight: 300;
-  font-size: 26px;
+  font-size: 30px;
   color: #fff;
-  margin-top: 70%;
+  margin-top: 65%;
   margin-left: 2%;
 }
 
 .project1, .project2, .project3 {
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   padding-top: 100px;
   color: #fff;
+  width: 600px;
+  font-family: 'PP Editorial old';
+  font-weight: 200;
 }
+
+.p1-content, .p2-content, .p3-content {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
 
 .footer {
   position: absolute;
   right: 10px;
-  top: 1500px;
+  top: 4000px;
   font-family: 'PP Editorial old';
   color: #fff;
   font-weight: 100;
