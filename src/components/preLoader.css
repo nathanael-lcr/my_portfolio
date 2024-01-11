@@ -1,8 +1,8 @@
 .preloader {
     height: 100vh;
     width: 100%;
-    background: #000;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -23,5 +23,5 @@
     font-size: 20px;
     font-family: 'PP Editorial old';
     overflow: hidden;
-    color: #fff;
+    color: #000000;
 }

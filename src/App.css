@@ -4,7 +4,7 @@
 }
 
 * {
-  cursor: default;
+  cursor: none;
 }
 
 body {
@@ -70,7 +70,7 @@ img {
 .desc {
   position: absolute;
   top: 110%;
-  left: 2%;
+  left: 8%;
   width: 500px;
   font-size: 21px;
   font-family: 'PP Editorial old';
@@ -136,7 +136,7 @@ img {
   font-size: 30px;
   color: #fff;
   margin-top: 65%;
-  margin-left: 2%;
+  margin-left: 4%;
 }
 
 .project1, .project2, .project3 {
@@ -147,11 +147,14 @@ img {
   width: 600px;
   font-family: 'PP Editorial old';
   font-weight: 200;
+  margin-left: 5%;
 }
 
 .p1-content, .p2-content, .p3-content {
   padding-top: 10px;
   font-size: 20px;
+  margin-left: 13%;
+  margin-top: 5%;
 }
 
 

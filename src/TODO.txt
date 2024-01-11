@@ -1,3 +1,11 @@
- - Make 3D Keyboard responsive in height (no px)
+ X Make 3D Keyboard responsive in height (no px) 
  - Make navigation work
  - Make it responsive
+ - Make the Favicon more clear
+ - Make contact page / Style it (https://www.emailjs.com/docs/tutorial/overview/)
+ - Rearrange cursor for contact text input
+ - Improve performance
+
+ - Clean up the code
+
+ 

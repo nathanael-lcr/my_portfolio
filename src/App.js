@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import FullScreenMenu from "./components/FullScreenMenu";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+import { Contact } from "./components/Contact";
 
 function Model(props) {
   const { scene } = useGLTF("./keyboard.glb");
@@ -19,6 +20,7 @@ function Model(props) {
 }
 
 function App() {
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -122,7 +124,7 @@ function App() {
             position: "absolute",
             width: "800px",
             height: "450px",
-            top: "760px",
+            top: "100%",
             right: "100px",
             zIndex: "-1",
           }}
@@ -190,6 +192,7 @@ function App() {
             practical scenarios.
           </div>
         </div>
+        <Contact />
       <div className="footer">© 2024 Nathanaël Lecron</div>
     </>
   );
