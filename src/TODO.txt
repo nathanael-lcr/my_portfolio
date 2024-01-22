@@ -2,7 +2,7 @@
  - Make navigation work
  - Make it responsive
  - Make the Favicon more clear
- - Make contact page / Style it (https://www.emailjs.com/docs/tutorial/overview/)
+ - Style contact page
  - Rearrange cursor for contact text input
  - Improve performance
 
