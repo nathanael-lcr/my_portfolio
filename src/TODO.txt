@@ -1,8 +1,8 @@
  X Make 3D Keyboard responsive in height (no px) 
  - Make navigation work
  - Make it responsive
- - Make the Favicon more clear
- - Style contact page
+ X Make the Favicon more clear
+ X Style contact page
  - Rearrange cursor for contact text input
  - Improve performance !! Laptop  and smaller devices!!
 
