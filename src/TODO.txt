@@ -4,7 +4,7 @@
  - Make the Favicon more clear
  - Style contact page
  - Rearrange cursor for contact text input
- - Improve performance
+ - Improve performance !! Laptop  and smaller devices!!
 
  - Clean up the code
 

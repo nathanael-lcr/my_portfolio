@@ -115,8 +115,8 @@ function App() {
           exploring new technologies and collaborating with experienced
           professionals to create meaningful experiences.
         </div>
-
-        <Canvas
+        
+        {/*<Canvas
           dpr={[1, 2]}
           shadows
           camera={{ fove: 45 }}
@@ -135,7 +135,7 @@ function App() {
               <Model scale={0.015} />
             </Stage>
           </PresentationControls>
-        </Canvas>
+        </Canvas>*/}
 
         <div class="marquee">
           <div class="track">

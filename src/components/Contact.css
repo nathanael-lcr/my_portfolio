@@ -5,13 +5,13 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 
 form {
   align-items: center;
   padding: 20px;
-  width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -20,6 +20,8 @@ form {
 
 label {
   display: block;
+  font-weight: 100;
+  font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: white;
@@ -27,14 +29,34 @@ label {
   padding-left: 15px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
+input[type="text"] {
+  color: white;
+  width: 350px;
   padding: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
   border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: black;
+}
+input[type="email"] {
+  color: white;
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: black;
+}
+
+textarea {
+  color: white;
+  width: 400px;
+  padding: 100px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid white;
   border-radius: 4px;
   background-color: black;
 }
@@ -45,8 +67,9 @@ textarea {
 }
 
 input[type="submit"] {
-    font-family: "PP editorial old";
-  background-color: #cecdc7;
+  
+  font-family: "PP editorial old";
+  background-color: white;
   color: #000000;
   padding: 10px 15px;
   border: none;
@@ -54,8 +77,9 @@ input[type="submit"] {
   cursor: pointer;
   font-size: 16px;
   margin-left: 10px;
+  cursor: none;
 }
 
 input[type="submit"]:hover {
-  background-color: #47463b;
+  cursor: none;
 }
